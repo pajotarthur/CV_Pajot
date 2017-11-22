@@ -1,0 +1,129 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{banking}
+\usepackage{bibentry}
+
+\moderncvcolor{purple}
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Arthur}{Pajot}
+% \title{Resumé title}
+\address{153 avenue de Choisy}{75013 Paris}{France}
+\phone[mobile]{+33~6~59~05~52~58}
+\email{arthur.pajot@lip6.fr}
+\homepage{http://www-poleia.lip6.fr/~pajot/}
+\extrainfo{fr.linkedin.com/in/arthurpajot/}
+\photo[64pt][0.4pt]{picture}
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2016--2019}{PhD in Deep Learning}{UPMC, Paris, France}{}{}{The objective of the PhD thesis is to develop Deep Learning method and algorithm to analyze and forecast complex interaction network. My current research focus on the forecasting of complex climatological data, with the help of physical prior knowledge.
+\begin{itemize}
+\item Published an article in deep learning and weather forecasting in La Recherche, a French popular science magazine.
+\item Gave a talk about forecasting pacific SST with deep neural network at the France-Japan Machine Learning Workshop.
+\item Participate in the organization of ICLR 2017 in Toulon.
+\end{itemize}
+}
+
+\cventry{2015--2016}{Master 2 in Statistical Learning (Mathematics, Vision and Learning),}{ENS, Cachan, France}{}{}{Selected classes include : deep learning , computer vision, wavelet processing and probabilistical graphical models }
+\cventry{2014--2016}{Master and Magistere of Computer Science}{ENS, Rennes, France}{}{}{
+Entrance by competitive examination.
+\begin{itemize}
+\item Project on gesture recognition using sparse representation. Using a sparse dictionary, the objective is to classify  a gesture, given his representation and some spatial invariant. Under the supervision of Ferran Arguelaguet.
+\end{itemize}
+}  % arguments 3 to 6 can be left empty
+\cventry{2012--2014}{Bachelor of Mathematics}{UPMC, Paris, France}{}{\textit{with Honors}}{
+Bi-disciplinary selective program on mathematics and computer science (PIMA).
+\begin{itemize}
+\item Summer school at Brown University.
+\item Project : Inpainting with Neural Networks. Using auto-encoder, tried to encode part of images, in order to infers missing region, given some cohesion rules. Under the supervision of Ludovic Denoyer.
+\end{itemize}}
+
+% \section{Master thesis}
+% \cvitem{title}{\emph{Title}}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
+\section{Experience}
+% \subsection{Vocational}
+
+\cventry{2016-2019}{Teaching Assistant}{UPMC}{}{}{During my PhD I have the opportunity to teach some class (Java, Introduction to programming, statistical learning)}
+
+
+\cventry{Summer 2016}{Internship}{UPMC}{}{}{The objective of the internship was to design efficient online algorithms to efficiently optimize convex objective function, under submodular constraints. Under the supervision of Patrick Gallinari}
+
+\cventry{Summer 2015}{Internship}{Osaka University}{}{}{The objective of the internship was to design efficient online algorithms to efficiently optimize convex objective function, under submodular constraints. Under the supervision of Takashi Washio and Yoshinobu Kawahara.}
+
+\cventry{Summer 2014}{Internship}{UPMC}{}{}{Internship in the statistic department (LSTA) at UPMC, under the supervision of Gerard Biau and Yvon Maday. The aim of the internship was to help the researchers to propose their scientific expertise to Kila-System, a firm dedicated to predict media-user comportment. I focused more particularly on Random Forest, some of their property, and their implementation under the map-reduce paradigm.}
+
+
+% \subsection{Miscellaneous}
+
+
+\bibliographystyle{plain}
+% \nobibliography{ref}
+\nocite{*}
+\bibliography{ref}
+
+
+
+\section{Computer skills}
+\cvitem{}{Python, Matlab,  C/C++, Tensorflow
+}
+
+\section{Languages}
+\cvitemwithcomment{French}{Native}{}
+\cvitemwithcomment{English}{Fluent}{level : CLES B2}
+
+
+%\section{Interests}
+%\cvitem{Travel}{Realisation of a World tour. Went across Europe and Asia.}
+% \cvitem{Music}{8 years of practise}
+%\cvitem{Sport}{Scuba diving (level 2).}
+
+
+% \section{References}
+% \begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+% \bibliography{ref}                        % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
